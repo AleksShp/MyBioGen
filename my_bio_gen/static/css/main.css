@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Evolventa Regular'), url('../fonts/Evolventa-Regular.woff') format('woff'),
+        url('../fonts/Evolventa-Regular.otf') format('otf'),
+        url('../fonts/Evolventa-Regular.ttf') format('ttf');
+    }
+
+@font-face {
+    font-family: 'Evolventa';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Evolventa Bold'), url('../fonts/Evolventa-Bold.woff') format('woff'),
+        url('../fonts/Evolventa-Bold.otf') format('otf'),
+        url('../fonts/Evolventa-Bold.ttf') format('ttf');
+    }
+
+body {
+    width: 1140px;
+    margin:0 auto;
+    font-family: Evolventa;
+    color: #6C7075;
+}
+
+
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.menu__item {
+    font-size: 20px;
+}
+
+.menu__item a {
+    color: #6C7075;
+    text-decoration: none;
+}
+
+.main-header {
+    padding: 11px 0;
+}
+
+.container {
+    padding: 0;
+}
+
+.ofer img {
+    border-top: 1px double black;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about h1 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 27px;
+}
