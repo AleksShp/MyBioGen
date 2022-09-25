@@ -58,7 +58,11 @@ ul, li {
 }
 
 .about {
-    margin-top: 50px;
+    margin-top: 0px;
+}
+
+.about_text {
+    padding-top: 50px;
 }
 
 .about h1 {
