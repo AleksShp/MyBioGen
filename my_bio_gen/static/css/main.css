@@ -36,40 +36,93 @@ ul, li {
     padding-left: 20px;
 }
 
-.menu__item {
-    font-size: 20px;
-}
+.menu__item {font-size: 20px;}
 
 .menu__item a {
     color: #6C7075;
     text-decoration: none;
 }
 
-.main-header {
-    padding: 11px 0;
-}
+.main-header {padding: 11px 0;}
 
-.container {
-    padding: 0;
-}
+.container {padding: 0;}
 
-.ofer img {
-    border-top: 1px double black;
-}
+.ofer img {border-top: 1px double black;}
 
-.about {
-    margin-top: 0px;
-}
+.about {margin-top: 0px;}
 
-.about_text {
-    padding-top: 50px;
-}
+.about_text {padding-top: 50px;}
 
 .about h1 {
     font-size: 27px;
     font-weight: 700;
 }
 
-.about p {
-    font-size: 27px;
+.about p {font-size: 27px;}
+
+.more {padding-top: 15px;}
+
+.more button {
+    height:50px;
+    width:225px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    background: #239B9F;
+    color: #ffffff;
+    box-shadow: 3px 4px 5px rgba(122,122,122,0.5);
 }
+
+.DNA_text p {
+    padding-top: 90px;
+    color: #6C7075;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.plus p {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.carusel_preview_text h1 {
+    padding-top: 85px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+.swiper-container{
+    margin: auto;
+    padding-top: 65px;
+    box-sizing: border-box;
+    width: 900px;
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+      background-color: white;
+      background-color: rgba(255, 255, 255, 0.5);
+      color: #000 !important;
+      fill: black !important;
+      stroke: black !important;
+      bottom: 10px;
+  }
+

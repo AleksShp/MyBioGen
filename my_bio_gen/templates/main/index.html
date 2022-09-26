@@ -8,6 +8,8 @@
     <title>MyBiogen</title>
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -59,6 +61,9 @@
                 лаборатории в России, удалось создать бренд «интеллектуального» домашнего ухода за кожей</p>
               <h1>MYBIOGEN By Biogenesis Lab.</h1>
             </div>
+            <div class="more">
+              <button>Подробнее</button>
+            </div>
           </div>
 
           <div class="col-md-4">
@@ -67,12 +72,100 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="DNA_text">
+              <p align="center">
+                Для воздействия на структуру ДНК применяется три механизма, которые
+                обеспечивают полномасштабную регенерацию дезоксирибонуклеиновой кислоты:
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="steps d-flex justify-content-between" >
+              <li class="srep">
+                <img src="{% static 'img/Pre_But.png' %}" alt="Pre_But">
+              </li>
+              <li class="plus">
+                <p>+</p>
+              </li>
+              <li class="srep">
+                <img src="{% static 'img/En_But.png' %}" alt="En_But">
+              </li>
+              <li class="plus">
+                <p>+</p>
+              </li>
+              <li class="srep">
+                <img src="{% static 'img/Kat_But.png' %}" alt="Kat_But">
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="products">
       <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="carusel_preview_text">
+              <h1 align="center">Наша продукция</h1>
+            <div>
+          <div>
+        </div>
+      </div>
+    </section>
 
+    <section class="carusel">
+      <div class="container">
+        <div class="swiper-container">
+          
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <img src="{% static 'img/card3.png' %}" alt="Card1_MyBiogen">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'img/card3.png' %}" alt="Card1_MyBiogen">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'img/card3.png' %}" alt="Card1_MyBiogen">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'img/card3.png' %}" alt="Card1_MyBiogen">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'img/card3.png' %}" alt="Card1_MyBiogen">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'img/card3.png' %}" alt="Card1_MyBiogen">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'img/card3.png' %}" alt="Card1_MyBiogen">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="{% static 'img/card3.png' %}" alt="Card1_MyBiogen">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carusel_slider">
+      <div class="container">
+        
       </div>
     </section>
 
@@ -190,3 +283,12 @@
   </body>
 </html>
 
+<script>
+  new Swiper('.swiper-container',{
+    slidesPerView: 3,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+  });
+</script>
