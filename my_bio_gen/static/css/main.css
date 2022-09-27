@@ -95,34 +95,23 @@ ul, li {
     color: #000;
 }
 
-.swiper-container{
-    margin: auto;
-    padding-top: 65px;
-    box-sizing: border-box;
-    width: 900px;
-    overflow: hidden;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    align-items: center;
-}
+.swiper {
+    width: 1140px;
+    height: 600px;
+    padding: 50px;
+  }
 
 .swiper-slide {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-      background-color: white;
-      background-color: rgba(255, 255, 255, 0.5);
-      color: #000 !important;
-      fill: black !important;
-      stroke: black !important;
-      bottom: 10px;
-  }
-
+    display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
