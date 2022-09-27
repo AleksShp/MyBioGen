@@ -76,7 +76,7 @@ ul, li {
 }
 
 .DNA_text p {
-    padding-top: 90px;
+    padding-top: 65px;
     color: #6C7075;
     font-size: 23px;
     font-weight: 700;
@@ -86,10 +86,11 @@ ul, li {
     font-size: 30px;
     font-weight: 700;
     color: #000000;
+    padding-top: 10px;
 }
 
 .carusel_preview_text h1 {
-    padding-top: 85px;
+    padding-top: 40px;
     font-size: 30px;
     font-weight: 700;
     color: #000;
@@ -97,8 +98,7 @@ ul, li {
 
 .swiper {
     width: 1140px;
-    height: 600px;
-    padding: 50px;
+    height: 550px;
   }
 
 .swiper-slide {
@@ -114,4 +114,121 @@ ul, li {
         -ms-flex-align: center;
         -webkit-align-items: center;
         align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #6C7075;
+}
+
+.pagination-container {
+    position: relative;
+}
+
+.swiper-pagination-bullet-active {
+    width: 10px;
+    height: 10px;
+    color: #fff;
+    background: #239B9F;
+}
+
+.flip {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .6s;
+}
+
+.flip-container, .front,
+.back {
+    width: 290px;
+    height: 400px;
+}
+
+.flip-container {
+    perspective: 1000px;
+}
+
+.front {
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color: #E0E2E1;
+    border-radius: 30px;
+    text-align: center;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    box-shadow: 3px 4px 5px rgba(122,122,122,0.5);
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.swiper-slide.swiper-slide-active .flip-container {
+    transform: scale(1.2);
+    transition: transform .3s ease;
+}
+.swiper-slide .flip-container {
+    transform: scale(1);
+    transition: transform .3s ease;
+}
+
+.swiper-slide-active .flip-container:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.form-container {
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    background: url(../img/background.png) 100% 100%;
+}
+
+.form-text h1{
+    padding-top: 80px;
+    text-align: center;
+    color: #636366;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.user-data{
+    padding-top: 60px;
+    margin: 0 60px auto;
+}
+
+.field input::placeholder {
+    text-align: left;
+    font-size: 15px;
+}
+
+.field input {
+    width: 310px;
+    height: 65px;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 27px;
+    color: #636366;
+    border: none;
+    outline:none;
 }
