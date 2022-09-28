@@ -6,6 +6,7 @@
   <head>
     <meta charset="URF-8">
     <title>MyBiogen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link
       rel="stylesheet"
@@ -17,13 +18,15 @@
   </head>
   <body>
     <header class="header">
-      <div class="main-header">
-        <div class="container">
+      <div class="container">
+        <div class="main-header">
           <div class="row">
-            <div class="col-md-3">
-              <img src="{% static 'img/Logo1.png' %}" alt="Logo_MyBiogen"> 
+            <div class="col-md-3 col-s-12">
+              <div class="logo">
+                <img src="{% static 'img/Logo1.png' %}" alt="Logo_MyBiogen">
+              </div>
             </div>
-            <div class="offset-md-4 col-md-5">
+            <div class="col-md-9 col-s-12">
               <nav>
                 <ul class="menu d-flex justify-content-between">
                   <li class="menu__item">
@@ -56,7 +59,7 @@
     <section class="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-lg-8 col-md-7">
             <div class="about_text">
               <h1>Бренд MYBIOGEN</h1>
               <p>
@@ -70,9 +73,9 @@
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div class="3d">
-              <div id="CanvasFrame" class="container"></div>
+          <div class="col-lg-4 col-md-5">
+            <div class="three-js">
+              <div id="CanvasFrame" class="CanvasFrame"></div>
             </div>
           </div>
         </div>
@@ -91,19 +94,19 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="steps d-flex justify-content-between" >
-              <li class="srep">
+              <li class="step">
                 <img src="{% static 'img/Pre_But.png' %}" alt="Pre_But">
               </li>
               <li class="plus">
                 <p>+</p>
               </li>
-              <li class="srep">
+              <li class="step">
                 <img src="{% static 'img/En_But.png' %}" alt="En_But">
               </li>
               <li class="plus">
                 <p>+</p>
               </li>
-              <li class="srep">
+              <li class="step">
                 <img src="{% static 'img/Kat_But.png' %}" alt="Kat_But">
               </li>
             </ul>
@@ -437,6 +440,14 @@
       simulateTouch: false,
       speed: 500,
       loop: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        767: {
+          slidesPerView: 3,
+        }
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
