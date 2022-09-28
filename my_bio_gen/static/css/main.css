@@ -74,9 +74,6 @@ ul, li {
     cursor: pointer;
     font-size: 20px;
     font-weight: 700;
-    background: #239B9F;
-    color: #ffffff;
-    box-shadow: 3px 4px 5px rgba(122,122,122,0.5);
 }
 
 .DNA_text p {
@@ -273,9 +270,6 @@ ul, li {
     cursor: pointer;
     font-size: 30px;
     font-weight: 700;
-    background: #239B9F;
-    color: #ffffff;
-    box-shadow: 3px 4px 5px rgba(122,122,122,0.5);
 }
 
 footer {
@@ -292,6 +286,47 @@ footer .container {
     padding-top: 20px;
     margin: 0 100px auto;
 }
+
+.bat button {
+    background: #239B9F;
+    color: #ffffff;
+    box-shadow: 3px 4px 5px rgba(122,122,122,0.5);
+}
+
+.bat button:hover {
+    background: #107F83;
+    color: #E0E2E1;
+    box-shadow: none;
+}
+
+.bat button:active {
+    background: #107F83;
+    color: #E0E2E1;
+    box-shadow: inset 0 0 6px;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+.popup__contenr img{
+    max-height: 1000px;
+    max-width: 515px;
+}
+
 
 @media screen and (max-width: 50000px) {
 	.container {

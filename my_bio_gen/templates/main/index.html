@@ -30,13 +30,13 @@
               <nav>
                 <ul class="menu d-flex justify-content-between">
                   <li class="menu__item">
-                    <a href="#">О бренде</a>
+                    <a href="#about">О бренде</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#">продукция</a>
+                    <a href="#products">продукция</a>
                   </li>
                   <li class="menu__item">
-                    <a href="#">контакты</a>
+                    <a href="#contacts">контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -61,15 +61,15 @@
         <div class="row">
           <div class="col-lg-8 col-md-7">
             <div class="about_text">
-              <h1>Бренд MYBIOGEN</h1>
+              <h1 id="about">Бренд MYBIOGEN</h1>
               <p>
                 В 2022 году благодаря коллаборации американской лаборатории Biogenesis Lab с российской
                 компанией «Фармацевтикал Косметик Рус» – эксклюзивным дистрибьютором продукции
                 лаборатории в России, удалось создать бренд «интеллектуального» домашнего ухода за кожей</p>
               <h1>MYBIOGEN By Biogenesis Lab.</h1>
             </div>
-            <div class="more">
-              <button>Подробнее</button>
+            <div class="more bat">
+              <button href="#about__popup">Подробнее</button>
             </div>
           </div>
 
@@ -120,7 +120,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="carusel_preview_text">
-              <h1 align="center">Наша продукция</h1>
+              <h1 id="products" align="center">Наша продукция</h1>
             </div>
           </div>
         </div>
@@ -199,7 +199,9 @@
                           Три формы гиалуроновой кислоты
                           22 растительных экстракта
                           Бережное очищение кожи</p>
-                          <button>Подробнее</button>
+                          <div class="bat">
+                            <button>Подробнее</button>
+                          </div>
                       </div>
           
                     </div>
@@ -267,7 +269,7 @@
         <div class="row">
           <div class="col=md-12">
             <div class="form-text">
-              <h1>Связаться с нами</hi>
+              <h1 id="contacts">Связаться с нами</hi>
             </div>
           </div>
         </div>
@@ -297,10 +299,10 @@
 
                 <div class="button-block">
                   <ul class="buttins d-flex justify-content-between">
-                    <li class="bt">
+                    <li class="bt bat">
                       <button type="submit">Отправить</button>
                     </li>
-                    <li class="bt">
+                    <li class="bt bat">
                       <button>Скачать каталог</button>
                     </li>
                   </ul>
@@ -333,6 +335,18 @@
         </div>
       </div>
     </footer>
+
+
+    <!--<div id="about__popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__contenr">
+          <img src="{% static 'img/popup1.png' %}" />
+          <div class="back__button bat">
+            <button>Назад</button>
+          </div> 
+        </div>
+      </div>
+    </div>  -->
 
 <!-- JavaScript -->
 
