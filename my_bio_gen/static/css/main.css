@@ -232,3 +232,56 @@ ul, li {
     border: none;
     outline:none;
 }
+
+.user-question {
+    padding-top: 40px;
+    margin: 0 60px auto;
+}
+
+.user-question textarea::placeholder {
+    text-align: left;
+    font-size: 15px;
+}
+
+.user-question textarea{
+    width: 1020px;
+    height: 215px;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 27px;
+    color: #636366;
+    border: none;
+    outline:none;
+    resize: none;
+}
+
+.button-block {
+    margin: 45px 115px auto;
+}
+
+.bt button {
+    height:85px;
+    width:350px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+    background: #239B9F;
+    color: #ffffff;
+    box-shadow: 3px 4px 5px rgba(122,122,122,0.5);
+}
+
+footer {
+    background-color: #B2B5BB;
+    font-size: 17px;
+    color: #636366;
+    text-align: center;
+}
+
+.footer-text {
+    padding-top: 20px;
+    margin: 0 100px auto;
+}
