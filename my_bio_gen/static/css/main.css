@@ -379,6 +379,12 @@ footer .container {
     background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all .2s ease 0s;
 }
 
 .popup__body {
@@ -389,9 +395,30 @@ footer .container {
     padding: 30px 10px;
 }
 
-.popup__contenr img{
-    max-height: 1000px;
-    max-width: 515px;
+.popup__contenr {
+    background-color: #fff;
+    max-width: 1000px;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.popup__clouse {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #239B9F;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.brend {
+    font-weight: 700;
 }
 
 
