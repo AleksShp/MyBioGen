@@ -69,7 +69,7 @@
               <h1>MYBIOGEN By Biogenesis Lab.</h1>
             </div>
             <div class="more bat">
-              <button href="#about__popup">Подробнее</button>
+              <button type="button">Подробнее</button>
             </div>
           </div>
 
@@ -315,7 +315,7 @@
             </div>
 
             <div class="col-sm-6 bat form-button">
-              <button>Скачать каталог</button>
+              <button type="button" id="download">Скачать каталог</button>
             </div>
 
           </div>
@@ -359,6 +359,12 @@
 
 <!-- JavaScript -->
 
+    <script>
+      document.getElementById('download').onclick = function(){
+        window.open('../static/pdf/booklet_MyBiogen.pdf', '_blank');
+      }
+    </script>
+
     <script type="importmap">
       {
           "imports": {
@@ -370,6 +376,7 @@
           }
       }
     </script>
+
     <script type="module">
 
       import * as THREE from 'three';
