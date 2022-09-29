@@ -211,13 +211,61 @@ ul, li {
 .back {
     background-color: #E0E2E1;
     border-radius: 30px;
-    text-align: center;
     transform: rotateY(180deg);
     position: absolute;
     top: 0;
     left: 0;
     backface-visibility: hidden;
     box-shadow: 3px 4px 5px rgba(122,122,122,0.5);
+}
+
+.back-content {
+    padding: 10px;
+}
+
+.back h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.back p {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.back li {
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+
+.back ul {
+    padding: 0;
+    margin: 0;
+}
+
+.back a {
+    position: absolute;
+    text-decoration: none;
+    color: #199590;
+    bottom: 10px;
+    left: 10px;
+}
+
+.back a:active {
+    color: #878B8F;
+}
+
+.components {
+    font-weight: 700;
+}
+
+.green {
+    color: #199590;
+}
+
+.red {
+    color: #A23834;
 }
 
 .img-container {
@@ -403,6 +451,14 @@ footer .container {
     position: relative;
 }
 
+.popup__contenr li {
+    padding-top: 10px;
+}
+
+.popup__contenr ul {
+    padding-bottom: 15px;
+}
+
 .popup__clouse {
     position: absolute;
     right: 25px;
@@ -446,6 +502,24 @@ footer .container {
         width: 250px;
         height: 345px;
     }
+
+    .back h1 {
+        font-size: 12px;
+    }
+    
+    .back p {
+        font-size: 12px;
+    }
+    
+    .back li {
+        padding-bottom: 6px;
+        font-size: 12px;
+    }
+
+    .back a {
+        font-size: 12px;
+    }
+
     .swiper {
         height: 450px;
     }
@@ -485,6 +559,24 @@ footer .container {
         width: 200px;
         height: 275px;
     }
+
+    .back h1 {
+        font-size: 9px;
+    }
+    
+    .back p {
+        font-size: 9px;
+    }
+    
+    .back li {
+        padding-bottom: 2px;
+        font-size: 9px;
+    }
+
+    .back a {
+        font-size: 9px;
+    }
+
     .swiper {
         height: 380px;
     }
