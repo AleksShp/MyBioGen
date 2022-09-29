@@ -37,71 +37,8 @@
 
 .stepS img {
     padding-top: 20px;
-    width: 340px;
+    width: 280px;
     height: 80px;
-}
-
-.fieldsS {
-    margin: 0 auto;
-}
-
-.fieldS{
-    display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: none;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        padding-top: 30px;
-}
-
-.fieldS input {
-    width: 310px;
-    height: 60px;
-    border-radius: 60px;
-    border: none;
-    outline:none;
-    font-size: 18px;
-
-}
-
-.button-blockS {
-    padding-top: 10px;
-    margin: 0 auto;
-    margin-top: 0;
-}
-
-.btS {
-    margin-top: 0;
-    display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: none;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        padding-top: 10px;
-}
-
-.btS button {
-    margin-top: 0;
-    width: 310px;
-    height: 60px;
-    border-radius: 60px;
-    border: none;
-    outline:none;
-    font-size: 18px;
 }
 
 body {
@@ -159,6 +96,32 @@ ul, li {
     width:225px;
     border: none;
     border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-button {
+    padding-top: 40px;
+    display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
+
+.form-button button {
+    height:70px;
+    width:310px;
+    border: none;
+    border-radius: 70px;
     cursor: pointer;
     font-size: 20px;
     font-weight: 700;
@@ -305,6 +268,22 @@ ul, li {
     margin: 0 60px auto;
 }
 
+.field {
+    padding-top: 20px;
+    display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
+
 .field input::placeholder {
     text-align: left;
     font-size: 15px;
@@ -325,6 +304,20 @@ ul, li {
 .user-question {
     padding-top: 40px;
     margin: 0 60px auto;
+    width: 96%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .user-question textarea::placeholder {
@@ -344,20 +337,6 @@ ul, li {
     border: none;
     outline:none;
     resize: none;
-}
-
-.button-block {
-    margin: 45px 115px auto;
-}
-
-.bt button {
-    height:85px;
-    width:350px;
-    border: none;
-    border-radius: 80px;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 700;
 }
 
 footer {
@@ -498,13 +477,6 @@ footer .container {
 
     .form-container {background: url(../img/BackgroundM.png) 100% 100%;}
 
-    .bt button {
-        height:65px;
-        width:220px;
-        border-radius: 60px;
-        font-size: 25px;
-    }
-
     .form-container {
         height: 600px;
     }
@@ -552,24 +524,11 @@ footer .container {
         height: 40;
     }
 
-    .field input {
-        width: 130px;
-        height: 45px;
-        font-size: 15px;
-    }
-
     .user-question textarea{font-size: 15px;}
 
     .user-data{padding-top: 15px;}
 
     .form-container {background: url(../img/BackgroundM.png) 100% 100%;}
-
-    .bt button {
-        height: 40px;
-        width: 140px;
-        border-radius: 40px;
-        font-size: 15px;
-    }
 
     .form-container {
         height: 500px;
@@ -579,6 +538,24 @@ footer .container {
 
     .three-js{
         display: none;
+    }
+
+    .field input {
+        width: 150px;
+    }
+
+    .form-button {
+        padding-top: 20px;
+    }
+
+    .form-button button {
+        height:50px;
+        width:225px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 700;
     }
 
 }
@@ -618,34 +595,13 @@ footer .container {
 
     .stepS {display: flex;}
 
-    .field {display: none;}
-
-    .fieldS{display: flex;}
-
     .user-question textarea::placeholder {
         text-align: left;
         font-size: 15px;
     }
-
-    .user-question {
-        width: 100%;
-        margin: 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
     
     .user-question textarea{
-        width: 300px;
+        width: 310px;
         height: 215px;
         border-radius: 50px;
         text-align: left;
@@ -670,14 +626,31 @@ footer .container {
         background-color: #E0E2E1;
     }
 
-    .bt button {
-        display: none;
-    }
-
     .form-container{
         height: 850px;
     }
 
-    .btS{display: flex;}
+    .field input {
+        width: 310px;
+        height: 65px;
+    }
 
+    .form-button button {width:310px;}
+
+    .menu__item a {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .menu__item a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .menu__item a {
+        font-size: 12px;
+    }
 }
