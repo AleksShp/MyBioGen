@@ -1,6 +1,4 @@
-import telegram
-
-from telegram import Bot, message
+from telegram import Bot
 
 
 def bot(input):
