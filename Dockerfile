@@ -1,13 +1,20 @@
-FROM python:3.9.10-slim as builder
+FROM python:3.8.10-slim
 
-RUN pip install --upgrade pip
+RUN mkdir /app
 
-COPY ./requirements.txt .
-RUN pip install -r requirements.txt
+# Скопировать с локального компьютера файл зависимостей
+# в директорию /app.
+COPY requirements.txt /app
 
-COPY ./my_bio_gen /app
+# Выполнить установку зависимостей внутри контейнера.
+RUN pip3 install -r /app/requirements.txt --no-cache-dir
 
+# Скопировать содержимое директории /api_yamdb c локального компьютера
+# в директорию /app.
+COPY my_bio_gen/ /app
+
+# Сделать директорию /app рабочей директорией. 
 WORKDIR /app
 
-COPY ./entrypoint.sh /
-ENTRYPOINT [ "sh", "/entrypoint.sh"]
+# Выполнить запуск сервера разработки при старте контейнера.
+CMD ["gunicorn", "my_bio_gen.wsgi:application", "--bind", "0:8000" ] 
