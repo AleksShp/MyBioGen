@@ -1,10 +1,9 @@
-from telegram import Bot
+import smtplib
+import os
+from django.shortcuts import redirect
 
 
 def bot(input):
-    bot = Bot(token='5485824035:AAHu2wvsspm8kwscgWpHe5DkWnMLDdD3Ms0')
-
-    chat_id = 969030499
 
     name = input.get('username')
     phone = input.get('tel')
@@ -13,6 +12,15 @@ def bot(input):
 
     message = f'Новая заявка \n Имя: {name}\n Email: {email}\n Телефон: {phone}\n Сообщение: {mes}'
 
-    text = message
+    sender = 'mybiogenbot@gmail.com'
+    password = os.getenv('EMAIL_PASSWORD')
 
-    bot.send_message(chat_id, text)
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+
+    try:
+        server.login(sender, password)
+        server.sendmail(sender, 'alekss.shp@yandex.ru', f'Subject: Новая заявка {message}')
+        return redirect('http://51.250.82.213/#sent')
+    except Exception as _ex:
+        return redirect('http://127.0.0.1:8000/#not_sent')

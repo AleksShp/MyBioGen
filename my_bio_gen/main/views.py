@@ -11,8 +11,6 @@ def index(request):
 @api_view(['POST'])
 def send_form(request):
     if request.method == 'POST':
-        print(request.data)
-        try:
-            bot(request.data)
-        except: return redirect('http://127.0.0.1:8000/')
-    return redirect('http://127.0.0.1:8000/')
+        bot(request.data)
+    else:
+        return redirect('http://http://51.250.82.213/')
