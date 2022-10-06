@@ -11,6 +11,11 @@ def index(request):
 @api_view(['POST'])
 def send_form(request):
     if request.method == 'POST':
-        bot(request.data)
+        try:
+            bot(request.data)
+            return redirect('http://51.250.82.213/#sent')
+        except Exception as _ax:
+            print(_ax)
+            return redirect('http://51.250.82.213/#not_sent')
     else:
-        return redirect('http://http://51.250.82.213/')
+        return redirect('http://51.250.82.213/')
