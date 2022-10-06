@@ -264,6 +264,10 @@ ul, li {
     color: #199590;
 }
 
+.art {
+    font-size: 15px;
+}
+
 .red {
     color: #A23834;
 }
@@ -758,6 +762,11 @@ footer .container {
 
     .menu__item a {
         font-size: 18px;
+    }
+
+    .info_popup h1{
+        padding-top: 10px;
+        font-size: 20px;
     }
 
 }
